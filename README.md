@@ -24,7 +24,7 @@ The Api documentations is in `swagger.yml`. You can use the https://editor.swagg
 
 # Deployment
 
-Every push to master this project runs many plataforms. First it build on codeship, then this executes a code coverage analysis on Codecov and finally a Maintainability analysis on codeclimate. This project has authomatic build on hub.docker. https://cloud.docker.com/repository/docker/camiloperezv/atlas_corp_housinganywhere
+Every push to master this project runs executes a couple of plataforms. First it build on codeship, then this executes a code coverage analysis on Codecov and finally a Maintainability analysis on codeclimate. This project has authomatic build on hub.docker. https://cloud.docker.com/repository/docker/camiloperezv/atlas_corp_housinganywhere
 
 # Project structure
 
