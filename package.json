@@ -16,7 +16,8 @@
     "eslint-plugin-mocha": "^5.3.0",
     "mocha": "^6.1.4",
     "mock-req-res": "^1.1.0",
-    "nyc": "^14.0.0"
+    "nyc": "^14.0.0",
+    "sinon": "^7.3.2"
   },
   "dependencies": {
     "body-parser": "^1.18.3",

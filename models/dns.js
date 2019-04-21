@@ -1,6 +1,7 @@
 const ERRORS = require('../helpers/build_error');
 
-const SectorID = 10;
+// eslint-disable-next-line no-undef
+const SectorID = process.env.SectorID || 10;
 
 const newDNS = (x, y, z, vel) => {
   const xNumber = Number(x);
