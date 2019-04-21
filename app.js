@@ -37,16 +37,6 @@ app.use((req, res, next) => {
   next(err);
 });
 
-if (app.get('env') === 'development') {
-  app.use((err, req, res) => {
-    res.status(err.status || 500);
-    res.render('error', {
-      message: err.message,
-      error: err
-    });
-  });
-}
-
 app.use((err, req, res) => {
   res.status(err.status || 500);
   res.render('error', {
