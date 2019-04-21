@@ -1,3 +1,4 @@
 # atlas corp
 [![Codeship Status for camiloperezv/atlas_corp](https://app.codeship.com/projects/a9c3bb70-4606-0137-ee9c-724e167eb18c/status?branch=master)](https://app.codeship.com/projects/337222)
 [![codecov](https://codecov.io/gh/camiloperezv/atlas_corp/branch/master/graph/badge.svg)](https://codecov.io/gh/camiloperezv/atlas_corp)
+[![Maintainability](https://api.codeclimate.com/v1/badges/709fb3778b2ea2079f24/maintainability)](https://codeclimate.com/github/camiloperezv/atlas_corp/maintainability)
