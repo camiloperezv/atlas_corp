@@ -1,4 +1,4 @@
-const ERRORS = require('../helpers/responses.json');
+const ERRORS = require('../helpers/build_error');
 
 const SectorID = 10;
 
@@ -12,15 +12,11 @@ const newDNS = (x, y, z, vel) => {
     isNaN(zNumber) === true ||
     isNaN(velNumber) === true
   ) {
-    const error = new Error(ERRORS.NUMBER_ARGUMENT_REQUIRED.message);
-    error.status = ERRORS.NUMBER_ARGUMENT_REQUIRED.status;
-    error.code = ERRORS.NUMBER_ARGUMENT_REQUIRED.code;
+    const error = ERRORS.buildError('NUMBER_ARGUMENT_REQUIRED');
     throw error;
   }
   if (velNumber < 0) {
-    const error = new Error(ERRORS.NEGATIVE_VEL.message);
-    error.status = ERRORS.NEGATIVE_VEL.status;
-    error.code = ERRORS.NEGATIVE_VEL.code;
+    const error = ERRORS.buildError('NEGATIVE_VEL');
     throw error;
   }
   const loc = (xNumber * SectorID) + (yNumber * SectorID) + (zNumber * SectorID) + velNumber;
