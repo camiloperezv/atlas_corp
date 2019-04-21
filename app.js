@@ -8,6 +8,7 @@ const apiV1Route = require('./routes/api_v1');
 const app = express();
 app.disable('x-powered-by');
 
+// eslint-disable-next-line no-unused-vars
 app.use((err, req, res, next) => {
   return res.status(500).json({
     message: 'There is an error on the app!',
