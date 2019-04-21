@@ -6,6 +6,7 @@ const compress = require('compression');
 const apiV1Route = require('./routes/api_v1');
 
 const app = express();
+app.disable('x-powered-by');
 
 app.use((err, req, res, next) => {
   return res.status(500).json({
