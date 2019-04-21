@@ -1,7 +1,7 @@
 version: '3'
 services:
   atlas:
-    image: atlas:latest
+    image: camiloperezv/atlas_corp_housinganywhere:latest
     command: node /app/bin/www
     ports:
      - "3000:3000"
