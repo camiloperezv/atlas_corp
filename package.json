@@ -1,0 +1,17 @@
+{
+  "name": "atlas_corp",
+  "version": "1.0.0",
+  "main": "bin/www",
+  "repository": "https://camiloperezv@github.com/camiloperezv/atlas_corp.git",
+  "author": "camilo.perezvr@gmail.com",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-plugin-mocha": "^5.3.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "compression": "^1.7.4",
+    "express": "^4.16.4"
+  }
+}
