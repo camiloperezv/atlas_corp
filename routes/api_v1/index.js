@@ -1,7 +1,7 @@
 const router = require('express').Router();
 
-router.get('/', (req, res) => {
-  res.end('done');
-});
+const DNS = require('../../controllers/dns');
+
+router.post('/dns', DNS.newDNS);
 
 module.exports = router;

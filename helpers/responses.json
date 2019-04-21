@@ -1,0 +1,12 @@
+{
+  "NEGATIVE_VEL": {
+    "message": "Vel cannot be a negative value",
+    "code": "NEGATIVE_VEL",
+    "status": 400
+  },
+  "NUMBER_ARGUMENT_REQUIRED": {
+    "message": "This argument is required and should be a number",
+    "code": "NUMBER_ARGUMENT_REQUIRED",
+    "status": 400
+  }
+}
