@@ -1,4 +1,9 @@
 {
+  "GENERIC_ERROR": {
+    "message": "Generic error",
+    "code": "GENERIC_ERROR",
+    "status": 500
+  },
   "NEGATIVE_VEL": {
     "message": "Vel cannot be a negative value",
     "code": "NEGATIVE_VEL",
