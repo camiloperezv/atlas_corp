@@ -1,0 +1,17 @@
+version: '3'
+services:
+  atlas:
+    image: atlas:latest
+    command: node /app/bin/www
+    ports:
+     - "3000:3000"
+    tty: true
+    networks:
+     - atlas_network
+    environment:
+     - PORT=3000
+     - NODE_ENV=production
+    restart: always
+networks:
+  atlas_network:
+    driver: bridge
