@@ -1,5 +1,7 @@
 const DNS = require('../models/dns');
 
+// route to add new DNS, expect a body with x,y,z and vel props
+// returns an error if the model fails or success with the model response
 const newDNS = (req, res) => {
   let loc;
   try {
