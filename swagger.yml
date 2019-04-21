@@ -1,0 +1,77 @@
+swagger: "2.0"
+info:
+  description: "This is the api for the DNS of Atlas Corp <br> Developed By Camilo Pérez"
+  version: "1.0.0"
+  title: "DNS Atlas Corp"
+  termsOfService: "http://google.com/"
+  contact:
+    name: Camilo Pérez
+    email: "camilo.perezvr@gmail.com"
+  license:
+    name: "All rights reserved "
+    url: "http://www.atlascorpsuperdrones.com"
+externalDocs:
+  description: Find out more docs
+  url: http://www.atlascorpsuperdrones.com
+basePath: "/"
+tags:
+- name: "DNS"
+  description: "API for DNS"
+
+schemes:
+- "http"
+
+paths:
+  /api/v2/dns:
+    post:
+      tags:
+      - "DNS"
+      summary: "Create an entry for the DNS for drones"
+      description: "This api must be called when a dron need to transmit some info"
+      operationId: "addDNS"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+        - in: "body"
+          name: "body"
+          description: "required body arguments"
+          required: true
+          schema:
+            $ref: "#/definitions/addDnsRequest"
+      responses:
+        200:
+          description: "successful operation"
+          schema:
+            $ref: "#/definitions/addDnsResponse"
+        400:
+          description: "This is an error"
+          schema:
+            $ref: "#/definitions/success_false_response"
+definitions:
+  success_false_response:
+    type: "object"
+    properties:
+      message:
+        type: "string"
+      error:
+        type: "string"
+      status:
+        type: "number"
+  addDnsResponse:
+    type: "object"
+    properties: 
+      loc:
+        type: "number"
+  addDnsRequest:
+    type: "object"
+    properties: 
+      x:
+        type: "string"
+      y:
+        type: "string"
+      z:
+        type: "string"
+      vel:
+        type: "string"
